@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------
+clearfix
+------------------------------------------------------------*/
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* exlude MacIE5 \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+/* end MacIE5 */
+/*-----------------------------------------------------------
+reset
+------------------------------------------------------------*/
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  resize: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 100%;
+}
+
+dl,
+dt,
+dd,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+table img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  border: 0;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+label,
+select,
+button {
+  cursor: pointer;
+}
+
+// Remove select appearance for IE
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+@media screen\0 {
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+/*-----------------------------------------------------------
+Link
+------------------------------------------------------------*/
+a {
+  outline: none;
+  transition: 0.3s;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: none;
+}

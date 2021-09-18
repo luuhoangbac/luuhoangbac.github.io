@@ -1,0 +1,35 @@
+{
+  "name": "custom-theme",
+  "version": "1.0.0",
+  "main": "",
+  "repository": "",
+  "author": "tuan <tuan@vietswiss.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss dist/style.css --output-style compact",
+    "prefix": "postcss dist/style.css --use=autoprefixer --map=false --output=style.css",
+    "stylelint": "stylelint '**/*.scss'",
+    "watch": "yarn run stylelint && yarn run build-css && yarn run prefix",
+    "dev": "nodemon -e scss -x yarn run watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "babel-eslint": "^10.1.0",
+    "clean-css-cli": "^4.3.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.3",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

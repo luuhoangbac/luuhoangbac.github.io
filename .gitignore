@@ -1,0 +1,27 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+package-lock.json
+'npm pack'
+*.tgz
+
+dist/
+
+*.map
+style.css.map*
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Mac OSX
+.DS_Store
+
+vendor

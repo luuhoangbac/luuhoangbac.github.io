@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+/*-----------------------------------------------------------
+clearfix
+------------------------------------------------------------*/
+.clearfix::after { content: ''; display: block; clear: both; height: 0; visibility: hidden; line-height: 0; }
+
+.clearfix { display: inline-block; }
+
+/* exlude MacIE5 \*/
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+
+/* end MacIE5 */
+/*-----------------------------------------------------------
+reset
+------------------------------------------------------------*/
+p { margin: 0; padding: 0; }
+
+ol, ul { list-style: none; margin: 0; padding: 0; }
+
+input, textarea { margin: 0; font-size: 100%; resize: none; }
+
+table { width: 100%; border-collapse: collapse; border-spacing: 0; font-size: 100%; }
+
+dl, dt, dd, th, td { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 0; }
+
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+html, body { margin: 0; padding: 0; }
+
+img { margin: 0; padding: 0; vertical-align: middle; border: 0; max-width: 100%; height: auto; }
+
+table img { margin: 0; padding: 0; vertical-align: middle; border: 0; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section { display: block; }
+
+nav ul { list-style: none; }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*:focus { outline: none !important; }
+
+label, select, button { cursor: pointer; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { select::-ms-expand { display: none; } }
+
+@media screen\0 { select::-ms-expand { display: none; } }
+
+/*-----------------------------------------------------------
+Link
+------------------------------------------------------------*/
+a { outline: none; -webkit-transition: 0.3s; transition: 0.3s; }
+
+a:link, a:visited, a:active { color: #000; text-decoration: none; }
+
+body { font-family: 'Open Sans', sans-serif; font-size: 16px; background-color: #f0f0f0; padding: 100px 15px; line-height: 1.5; }
+
+.main { max-width: 1100px; margin: 0 auto; background-color: #fff; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); padding: 50px; }
+
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@-webkit-keyframes zoom { 0% { -webkit-transform: scale(1) rotate(0deg); transform: scale(1) rotate(0deg); }
+  50% { -webkit-transform: scale(1.5) rotate(180deg); transform: scale(1.5) rotate(180deg); }
+  100% { -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); } }
+
+@keyframes zoom { 0% { -webkit-transform: scale(1) rotate(0deg); transform: scale(1) rotate(0deg); }
+  50% { -webkit-transform: scale(1.5) rotate(180deg); transform: scale(1.5) rotate(180deg); }
+  100% { -webkit-transform: scale(1) rotate(360deg); transform: scale(1) rotate(360deg); } }
+
+.section-header { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; padding-bottom: 40px; }
+
+.section-header .main-info { width: calc(100% - 360px); padding-left: 50px; }
+
+.section-header .main-info .name { font-family: "Space Mono", monospace; font-size: 40px; font-weight: bold; }
+
+.section-header .main-info .position { font-family: "Space Mono", monospace; font-size: 18px; margin-top: 5px; font-weight: 600; }
+
+.section-header .avatar { width: 100px; border-radius: 50%; position: relative; margin-left: 10px; }
+
+.section-header .avatar::before { content: ''; display: block; padding-top: 100%; }
+
+.section-header .avatar::after { position: absolute; content: ''; border: 1px dashed #000; width: calc(100% + 20px); height: calc(100% + 20px); top: -10px; left: -10px; border-radius: 50%; -webkit-animation: spin 7s linear infinite; animation: spin 7s linear infinite; }
+
+.section-header .contact-info { width: 250px; text-align: right; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.section-header .contact-info .icon { padding-left: 30px; background: center left/15px 15px no-repeat; }
+
+.section-header .contact-info .address { background-image: url("img/icon/icon-marker.svg"); }
+
+.section-header .contact-info .mail { background-image: url("img/icon/icon-email.svg"); font-weight: 600; }
+
+.section-header .contact-info .tel { background-image: url("img/icon/icon-phone.svg"); }
+
+.section-header .contact-info .dob { background-image: url("img/icon/icon-birthday.svg"); }
+
+.section-content { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; border-top: 1px dashed #bbb; }
+
+.section-content .general { width: 35%; padding-right: 40px; }
+
+.section-content .detail { width: 65%; padding-left: 40px; padding-top: 30px; border-left: 1px dashed #bbb; }
+
+.section-content .detail-intro { margin-bottom: 30px; }
+
+.section-content .detail .list { margin-bottom: 30px; }
+
+.section-content .detail .content:not(:last-child) { margin-bottom: 40px; }
+
+.section-content .child-section { padding-top: 30px; }
+
+.section-content .child-section:not(:last-child) { padding-bottom: 30px; }
+
+.section-content .child-section:not(:first-child) { border-top: 1px dashed #bbb; }
+
+.section-content .child-section .content:not(:last-child) { margin-bottom: 20px; }
+
+.section-content .child-section .content .date { color: #666; font-size: 13px; font-weight: 600; }
+
+.section-content .child-section .content .place { font-size: 16px; }
+
+.section-content .child-section .content .position { color: #999; margin-bottom: 20px; }
+
+.section .title { font-family: 'Space Mono', monospace; font-size: 18px; font-weight: bold; margin-bottom: 5px; }
+
+.section .company-name { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; border-bottom: 1px dashed #bbb; padding-bottom: 15px; margin-bottom: 15px; position: relative; }
+
+.section .company-name::before, .section .company-name::after { position: absolute; content: ''; width: 7px; height: 7px; color: #666; left: -44px; top: calc(50% - 15px); border-radius: 50%; }
+
+.section .company-name::before { border: 1px dashed currentColor; width: 13px; height: 13px; left: -47px; top: calc(50% - 18px); background-color: #fff; -webkit-animation: zoom 2s linear infinite; animation: zoom 2s linear infinite; }
+
+.section .company-name::after { background-color: currentColor; }
+
+.section .company-name .date { width: 100px; color: #666; font-weight: 600; line-height: 1.7; }
+
+.section .company-name .right { width: calc(100% - 100px); padding-left: 20px; position: relative; }
+
+.section .company-name .right::before { position: absolute; content: ''; height: calc(100% - 15px); border-left: 1px dashed #bbb; top: 50%; left: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.section .company-name .name { font-weight: 600; color: #666; }
+
+.section .company-name .title { margin-bottom: 0; }
+
+.section .list .item { padding-left: 15px; position: relative; }
+
+.section .list .item::before { position: absolute; content: ''; width: 5px; height: 5px; border-radius: 50%; left: 0; top: 10px; background-color: #000; }
+
+.section .different-note { padding-left: 25px; background: url("img/icon/icon-star.svg") top 3px left/20px 20px no-repeat; font-size: 14px; }
+
+.section .main-title { font-size: 22px; font-family: 'Space Mono', monospace; font-weight: bold; margin-bottom: 10px; }
+
+.section .list-link .link-item { margin-bottom: 15px; }
+
+.section .new-tab { display: block; padding-left: 25px; background: url("img/icon/icon-link.svg") center left/13px 13px no-repeat; margin-bottom: 5px; font-weight: 600; }
+
+.section .list-skill { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 10px; }
+
+.section .list-skill .skill-item { display: inline-block; padding: 5px 10px; background-color: #f0f0f0; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
+
+.section .list-skill .skill-item:not(:last-child) { margin-right: 5px; }
+
+@media only screen and (max-width: 768px) { body { padding: 30px 15px; font-size: 14px; }
+  .main { padding: 50px 20px 20px; }
+  .section-header { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .section-header .main-info, .section-header .contact-info { width: 100%; }
+  .section-header .main-info { padding-left: 0; margin-top: 20px; text-align: center; margin-bottom: 20px; }
+  .section-header .main-info .name { font-size: 30px; }
+  .section-header .main-info .position { margin-top: 0; }
+  .section-header .contact-info { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .section-content .general { width: 100%; padding-right: 0; }
+  .section-content .detail { width: 100%; padding-left: 0; border-left: 0; }
+  .section .company-name { border-top: 1px dashed #bbb; padding-top: 10px; padding-bottom: 10px; }
+  .section .company-name::before { left: 78px; top: -7px; }
+  .section .company-name::after { top: -4px; left: 81px; }
+  .section .company-name .date { width: 85px; }
+  .section .company-name .right { width: calc(100% - 85px); } }
+
+/*# sourceMappingURL=style.css.map */
